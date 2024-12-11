@@ -26,22 +26,23 @@ cd hospital-management
 ```
 
 ### 2. Set Up the Environment Variables  
- **backend** require environment variables.
+ **api** require environment variables.
 
 #### Backend Environment Variables  
-Create a `.env` file in the `backend/` folder and add the following variables:
+Create a `.env` file in the `api/` folder and add the following variables:
 
 ```env
 PORT=8000
 MONGO_URL=your-mongodb-connection-string
 JWT_SECRET=your-jwt-secret-key
+JWT_EXPIRES_IN=your_token_expiration_time
 ```
 
 ### 3. Install Dependencies  
 To install the necessary dependencies for both the **frontend** and **api**, follow these steps:
 
 #### For api  
-Navigate to the `backend/` directory and install the dependencies:
+Navigate to the `api/` directory and install the dependencies:
 
 ```bash
 cd api
@@ -64,7 +65,7 @@ npm run dev
 ```
 
 ### Start the Backend Development Server  
-Navigate to the `frontend/` folder and run the following command to start the frontend development server:
+Navigate to the `api/` folder and run the following command to start the frontend development server:
 
 ```bash
 Nodemon index.js
